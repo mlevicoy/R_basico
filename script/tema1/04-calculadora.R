@@ -61,7 +61,9 @@ log(x = 32, base = 2)
 
 
 miVariable = 4
-doble = function(x){2*x}
+doble = function(x){
+  10*x
+}
 doble(miVariable)
 
 cuadrado = function(x){x^2}
@@ -74,6 +76,16 @@ y <- cos(pi/4)
 y
 
 sin(pi/4) + cos(pi/4) -> z
+
+
+ls()
+
+rm(doble)
+
+ls()
+
+rm(list = ls())
+
 
 
 
