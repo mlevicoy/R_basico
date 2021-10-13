@@ -1,0 +1,87 @@
+---
+title: "Documentación de Texto"
+author: "Curso de Estadística Descriptiva"
+date: "13-10-2021"
+output: pdf_document
+---
+
+# Título 1
+
+## Título 2
+
+### Título 3
+
+#### Título 4
+
+##### Título 5
+
+###### Título 6
+
+Esto es un texto llano. Podemos escribir sin ningún problema todo el 
+texto que queramos para acompañar a tanto el código en `R` como las
+fórmulas en \LaTeX.
+
+Esto sería una nueva línea de texto. Para separar los párrafos necesitamos
+siempre al menos un doble Enter.
+
+Para colocar *cursiva* podemos usar un asterisco: *esto sería un texto en cursiva*
+o bien una barra baja _esto también es cursiva_.
+
+Para colocar **negrita** podemos usar un doble asterisco: **esto es negrita** o bien
+una doble barra baja __esto también es negrita__.
+
+Los superíndices van con el *sombrerito*: este curso vale por mi nota^2^.
+
+Para tachar una palabra usamos la doble tilde ~~Las matemáticas son un rollo~~
+
+Para crear un enlace: [Buscar por Google](https://www.google.cl)
+
+endash: -- Y entonces el hombre dijo: ...
+
+emdash: ... --- Como el hombre quería explicar.
+
+elipsis: ...
+
+ecuación en línea $S = \pi\cdot r^2$
+
+imagen ![](../../Imagenes/Gob1.jpg)
+
+***
+
+Aquí empieza otra cosa
+
+> Esto es una cita en bloque
+
+### Lista no ordenada
+
+* Item primero
+* Item segundo
+    + Sub ítem 2.1
+    + Sub ítem 2.2
+    + Sub ítem 2.3
+* Item tercero
+* ...
+
+### Lista ordenada
+
+1. Primer ítem
+2. Segundo ítem
+    + Sub ítem de 2
+    + Nuevo sub ítem
+3. Tercer ítem
+1. Cuarto ítem
+1. Último ítem
+
+### Tabla
+
+Alumno   |   Nota   |   Edad        
+---------|----------|-----------
+Manuel   | 3.2      | 10
+Juan     | 2.1      | 20
+Pedro    | 1.0      | 30
+Diego    | 6.5      | 40
+Ana      | 4.3      | 50
+
+
+
+
