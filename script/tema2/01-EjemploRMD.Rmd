@@ -2,7 +2,10 @@
 title: "01-EjemploRMD"
 author: "Curso de Estadística Descriptiva"
 date: "13-10-2021"
-output: pdf_document
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
 ---
 
 ```{r setup, include=FALSE}
@@ -26,5 +29,43 @@ You can also embed plots, for example:
 ```{r pressure, echo=FALSE}
 plot(pressure)
 ```
+
+### Nuestra primera Chunks
+
+Vamos a calcular $\sqrt{2} - e^{-2}$:
+```{r miPrimeraChunk, echo=TRUE, eval=TRUE, results='hold'}
+sqrt(2) - exp(-2)
+x = 1:5
+sqrt(x)
+```
+
+```{r magic, message=TRUE, results='hide'}
+library(magic)
+magic(6)
+```
+
+La raíz cuadrada de 64 es `r sqrt(64)` o, lo que viene siendo lo mismo $\sqrt{2}$: `r sqrt(64)`
+
+La raíz quinta de 32 es `r 32^(1/5)` o, lo que viene siendo lo mismo, $\sqrt[5]{64}=$ `r 32^(1/5)`.
+
+Cuando queremos hacer la raíz cuadrada de dos podemos hacerlo:
+
+- En $LaTeX$: $\sqrt{2}$
+- En `R` haciendo `r sqrt(2)`
+- La frase completa: $\sqrt{2}=$ `r sqrt(2)`
+
+El número $\pi$ empieza por `r pi`.
+
+```{r prueba, results='hide', echo=FALSE}
+notas = c(3,5,7,7,9,10,4,7,9) #Vector
+media = mean(notas) #Media
+n = length(notas) #Cantidad de notas
+desv.tip = sd(notas) #Desviación típica 
+```
+
+Este año he echo $n=$ `r n` exámenes, con una media $\overline{x}=$ `r round(media,2)`
+y una desviación típica de $s=$ `r round(desv.tip,2)`
+
+
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
