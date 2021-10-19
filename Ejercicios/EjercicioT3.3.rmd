@@ -1,0 +1,54 @@
+---
+title: "Binomio de Newton"
+author: "Manuel Levicoy"
+date: "19-10-2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# PRODUCTO NOTABLE
+
+La formula del producto notable es:
+
+$$(a+b)^2 = a^2+2ab+b^2$$
+
+# FUNCION CON R DEL PRODUCTO NOTABLE
+
+```{r}
+producto_notable = function(a, b){
+  a^2 + 2 * a * b + b^2
+}
+producto_notable(1, 2)
+producto_notable(2, 1)
+```
+
+# BINOMIO DE NEWTON
+
+La formula del binomio de Newton es:
+
+$$(a+b)^n = \sum_{k=0}^n {n\choose k}\cdot a^{n-k}\cdot b^k = {n\choose 0}*a^n*b^0+\cdots {n\choose n}*a^0*b^n$$
+
+# FUNCION CON R DEL BINOMIO DE NEWTON
+
+```{r}
+binomio_newton = function(a, b, n){
+  cumsum(choose(n, (0:n)) * a^{n - (0:n)} * b^(0:n))[n+1]    
+}
+binomio_newton(2,1,2)
+```
+
+# GLOSARIO
+
+\begin{verbatim}
+- a^b = a elevado a b.
+- \sum_{k=0}^n = Sumatoria de k=0 hasta n.
+- {n\choose k} = Coeficiente binomial, n elige k.
+- \cdot = Producto.
+- \cdots = Tres puntos.
+- cumsum = Suma acumulada.
+
+\end{verbatim}
+
