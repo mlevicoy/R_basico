@@ -49,6 +49,5 @@ binomio_newton(2,1,2)
 - \cdot = Producto.
 - \cdots = Tres puntos.
 - cumsum = Suma acumulada.
-
 \end{verbatim}
 
